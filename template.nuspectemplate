@@ -14,14 +14,15 @@
   <files>
     <file src="locales\**" target="lib\net45\locales" />
     <file src="resources\**" target="lib\net45\resources" />
+    <file src="updater\**" target="lib\net45\updater" />
     <file src="*.bin" target="lib\net45" />
     <file src="*.dll" target="lib\net45" />
     <file src="*.pak" target="lib\net45" />
     <file src="*.exe.config" target="lib\net45" />
     <file src="*.exe.sig" target="lib\net45" />
     <file src="icudtl.dat" target="lib\net45\icudtl.dat" />
-    <file src="installer.db" target="lib\net45\installer.db" />
-    <file src="app.ico" target="lib\net45\app.ico" />
+    <file src="installer.db" target="lib\net45" />
+    <file src="app.ico" target="lib\net45" />
     <file src="LICENSE" target="lib\net45\LICENSE" />
     <file src="<%- exe %>" target="lib\net45\<%- exe %>" />
     <% additionalFiles.forEach(function(f) { %>
