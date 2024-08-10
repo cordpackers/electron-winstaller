@@ -146,7 +146,7 @@ export async function createWindowsInstaller(options: SquirrelWindowsOptions): P
   }
   
   if (await fs.pathExists(path.join(appDirectory, 'updater'))) {
-    metadata.additionalFiles.push({ src: 'updater\\**', target: 'lib\\net45' });
+    metadata.additionalFiles.push({ src: 'updater\\**', target: 'lib\\net45\\updater' });
   }
 
   if (await fs.pathExists(path.join(appDirectory, 'app.ico'))) {

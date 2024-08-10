@@ -20,7 +20,8 @@
     <file src="*.exe.config" target="lib\net45" />
     <file src="*.exe.sig" target="lib\net45" />
     <file src="icudtl.dat" target="lib\net45\icudtl.dat" />
-    <file src="Squirrel.exe" target="lib\net45\squirrel.exe" />
+    <file src="installer.db" target="lib\net45\installer.db" />
+    <file src="app.ico" target="lib\net45\app.ico" />
     <file src="LICENSE" target="lib\net45\LICENSE" />
     <file src="<%- exe %>" target="lib\net45\<%- exe %>" />
     <% additionalFiles.forEach(function(f) { %>
