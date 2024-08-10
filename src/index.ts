@@ -155,6 +155,7 @@ export async function createWindowsInstaller(options: SquirrelWindowsOptions): P
 
   if (await fs.pathExists(path.join(appDirectory, 'installer.db'))) {
     metadata.additionalFiles.push({ src: 'installer.db', target: 'lib\\net45' });
+  }
 
   const templatePath = options.nuspecTemplate || path.join(__dirname, '..', 'template.nuspectemplate');
   let templateData = await fs.readFile(templatePath, 'utf8');
